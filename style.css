@@ -1,0 +1,325 @@
+:root{
+--accent:#ff6b35;
+--card:#1e293b;
+--section:#0f172a;
+--section2:#020617;
+}
+
+/* BODY */
+
+body{
+background:linear-gradient(135deg,var(--section),var(--section2));
+color:white;
+font-family:Arial, Helvetica, sans-serif;
+margin:0;
+}
+
+/* HEADER */
+
+header{
+padding:60px;
+background:linear-gradient(90deg,#020617,#0f172a);
+text-align:center;
+}
+
+h1{
+font-size:42px;
+color:var(--accent);
+margin-bottom:10px;
+}
+
+/* SOCIAL BUTTONS */
+
+.social a{
+color:white;
+margin:10px;
+text-decoration:none;
+border:1px solid var(--accent);
+padding:8px 15px;
+border-radius:6px;
+transition:0.3s;
+}
+
+.social a:hover{
+background:var(--accent);
+color:black;
+}
+
+/* SECTIONS */
+
+section{
+padding:60px 20px;
+}
+
+/* YOUTUBE VIDEOS */
+
+.videos{
+display:flex;
+gap:20px;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+iframe{
+width:350px;
+height:200px;
+border-radius:10px;
+transition:0.3s;
+}
+
+iframe:hover{
+transform:scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+padding:20px;
+background:#020617;
+text-align:center;
+}
+
+/* SHOWREEL */
+
+.showreel{
+text-align:center;
+padding:60px 0;
+}
+
+.reel-container{
+width:360px;
+aspect-ratio:9/16;
+margin:auto;
+}
+
+.reel-container iframe{
+width:100%;
+height:100%;
+border-radius:12px;
+}
+
+/* TOOLS */
+
+.tools{
+background:var(--section);
+text-align:center;
+}
+
+.tools h2{
+font-size:36px;
+margin-bottom:40px;
+color:var(--accent);
+}
+
+.tools-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+}
+
+.tool{
+background:var(--card);
+padding:20px;
+width:250px;
+border-radius:12px;
+transition:0.3s;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.tool:hover{
+transform:translateY(-6px);
+}
+
+.tool h3{
+margin-bottom:10px;
+}
+
+/* THUMBNAILS */
+
+.thumbnails{
+background:#020617;
+text-align:center;
+}
+
+.thumbnails h2{
+font-size:36px;
+margin-bottom:30px;
+color:var(--accent);
+}
+
+.thumbnail-container{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.thumbnail-container img{
+width:100%;
+border-radius:12px;
+transition:0.3s;
+box-shadow:0 5px 20px rgba(0,0,0,0.5);
+}
+
+.thumbnail-container img:hover{
+transform:scale(1.05);
+}
+
+/* VIDEO WORK */
+
+.video-work{
+background:var(--section);
+text-align:center;
+}
+
+.video-work h2{
+font-size:36px;
+margin-bottom:30px;
+color:var(--accent);
+}
+
+.video-container{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:30px;
+max-width:900px;
+margin:auto;
+}
+
+.video-item{
+background:var(--card);
+padding:10px;
+border-radius:12px;
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.video-item video{
+width:100%;
+border-radius:10px;
+}
+
+/* CENTER LAST VIDEO */
+
+
+
+/* ABOUT / WORK / CONTACT SECTIONS */
+
+.about,
+.work,
+.contact{
+text-align:center;
+max-width:800px;
+margin:auto;
+}
+
+/* Paragraph alignment */
+
+.about p,
+.work p,
+.contact p{
+text-align:center;
+line-height:1.6;
+}
+
+/* Contact email style */
+
+.contact a{
+color:var(--accent);
+text-decoration:none;
+font-weight:bold;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}
+
+/* CENTER ABOUT / MY WORK / CONTACT CONTENT */
+
+section h2{
+text-align:center;
+}
+
+section p{
+text-align:center;
+max-width:800px;
+margin:auto;
+line-height:1.6;
+}
+
+/* center email link */
+
+section a{
+display:inline-block;
+margin-top:10px;
+}
+
+/* ABOUT SECTION WITH PHOTO */
+
+.about{
+padding:60px 20px;
+}
+
+.about-container{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:50px;
+max-width:1000px;
+margin:auto;
+flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+min-width:300px;
+}
+
+.about-text h2{
+color:var(--accent);
+margin-bottom:20px;
+}
+
+.about-text p{
+line-height:1.6;
+}
+
+.about-image{
+flex:1;
+text-align:center;
+}
+
+.about-image img{
+width:300px;
+border-radius:15px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
+}
+
+.about-text h2{
+color:var(--accent);
+margin-bottom:20px;
+font-size:40px;
+}
+
+.about-text p{
+line-height:1.8;
+font-size:18px;
+}
+
+.video-item iframe{
+width:100%;
+aspect-ratio:9/16;
+border-radius:10px;
+}
+
+.video-item img{
+width:100%;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.video-item img:hover{
+transform:scale(1.05);
+}
